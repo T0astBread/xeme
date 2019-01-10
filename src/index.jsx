@@ -1,9 +1,12 @@
 /* eslint-disable import/no-extraneous-dependencies */
-import { render } from 'react-dom';
-import HelloWorld from './components/HelloWorld';
+import { render } from "react-dom"
+import HelloWorld from "./components/HelloWorld"
+import Page from "./components/Page"
 
-const root = document.getElementById('root');
+const root = document.getElementById("root")
 
 render((
-  <HelloWorld />
-), root);
+	<Page>
+		<HelloWorld />
+	</Page>
+), root)
