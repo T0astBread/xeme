@@ -20,6 +20,7 @@
     "react-dom": "^16.7.0"
   },
   "dependencies": {
-    "@neutrinojs/style-loader": "^8.3.0"
+    "@neutrinojs/style-loader": "^8.3.0",
+    "react-layout-components": "^3.0.6"
   }
 }
