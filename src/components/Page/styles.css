@@ -1,7 +1,0 @@
-.Page {
-    background-color: var(--page-background);
-}
-
-.Page--theme-dark {
-    --page-background: #121316;
-}
