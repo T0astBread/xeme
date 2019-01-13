@@ -2,7 +2,7 @@
 import { render } from "react-dom"
 import { Page as FillViewport, Box, ScrollView } from "react-layout-components"
 import HelloWorld from "./components/presentation/HelloWorld"
-import Page from "./components/presentation/Page"
+import Page from "./components/layout/Page"
 import styles from "./styles.css"
 
 const root = document.getElementById("root")
