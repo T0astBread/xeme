@@ -1,0 +1,17 @@
+.Page {
+    background-color: var(--page-background);
+    overflow: auto;
+}
+
+.Page--theme-dark {
+    --page-background: #121316;
+}
+
+.Page__top, .Page__bottom {
+    position: sticky;
+    left: 0;
+}
+
+.Page__top--sticky {
+    top: 0;
+}
