@@ -1,0 +1,51 @@
+.Bevel {
+    --bevel-border: 1px solid var(--grey-2);
+    --bevel-inner-border: 1px solid var(--grey-1);
+
+    width: calc(100% - 1px);
+    height: calc(100% - 1px);
+    padding: 1px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.Bevel__inner {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.Bevel--top {
+    border-top: var(--bevel-border);
+}
+
+.Bevel--bottom {
+    border-bottom: var(--bevel-border);
+}
+
+.Bevel--left {
+    border-left: var(--bevel-border);
+}
+
+.Bevel--right {
+    border-right: var(--bevel-border);
+}
+
+.Bevel--top .Bevel__inner {
+    border-top: var(--bevel-inner-border);
+}
+
+.Bevel--bottom .Bevel__inner {
+    border-bottom: var(--bevel-inner-border);
+}
+
+.Bevel--left .Bevel__inner {
+    border-left: var(--bevel-inner-border);
+}
+
+.Bevel--right .Bevel__inner {
+    border-right: var(--bevel-inner-border);
+}
