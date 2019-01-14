@@ -1,0 +1,20 @@
+.Image {
+    display: inline-block;
+    margin: 2em 0;
+}
+
+.Image__inner {
+    padding: 1em;
+}
+
+.Image__img {
+    display: block;
+    max-width: 100%;
+    margin: auto;
+}
+
+.Image__caption {
+    display: inline-block;
+    padding: 1em;
+    padding-bottom: 0;
+}
