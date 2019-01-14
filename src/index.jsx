@@ -15,6 +15,11 @@ render((
 			top={
 				<HeaderBar>
 					<h1>Hello world</h1>
+					<nav>
+						<Link>Home</Link>
+						<Link isExternal>t0ast.cc</Link>
+						<Link isRedirect>Redirect</Link>
+					</nav>
 				</HeaderBar>
 			}
 			topIsSticky={false}
