@@ -1,8 +1,8 @@
 import React from "react"
 import {Box, ScrollView} from "react-layout-components"
-import styles from "./styles.css"
-import fonts from "./fonts.css"
-import colors from "./colors.css"
+import "./styles.css"
+import "./colors.css"
+import "./typography.css"
 
 const Page = ({ top, topIsSticky = false, left, right, bottom, children, theme = "dark" }) => {
     return (
