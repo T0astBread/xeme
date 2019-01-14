@@ -1,6 +1,8 @@
 import React from "react"
 import {Box, ScrollView} from "react-layout-components"
 import styles from "./styles.css"
+import fonts from "./fonts.css"
+import colors from "./colors.css"
 
 const Page = ({ top, topIsSticky = false, left, right, bottom, children, theme = "dark" }) => {
     return (
@@ -12,9 +14,9 @@ const Page = ({ top, topIsSticky = false, left, right, bottom, children, theme =
                 <Box className="Page__left">
                     {left}
                 </Box>
-                <Box className="Page__main" flex="1 1 auto">
+                <div className="Page__main">
                     {children}
-                </Box>
+                </div>
                 <Box className="Page__right">
                     {right}
                 </Box>

@@ -1,14 +1,8 @@
 .Page {
     background-color: var(--background-1);
+    color: var(--background-text);
+    font-family: var(--font-family);
     overflow: auto;
-}
-
-.Page--theme-dark {
-    --background-1: #121316;
-    --background-2: #090a0b;
-    --grey-1: #555;
-    --grey-2: #333;
-    --primary-1: #59477f;
 }
 
 .Page__top, .Page__bottom {
@@ -18,4 +12,12 @@
 
 .Page__top--sticky {
     top: 0;
+}
+
+.Page__main {
+    flex: 1 1 auto;
+}
+
+.Page__main section {
+    margin: 0 1em;
 }
