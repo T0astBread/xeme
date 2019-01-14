@@ -20,4 +20,5 @@
 
 .Page__main section {
     margin: 0 1em;
+    max-width: 50em;
 }

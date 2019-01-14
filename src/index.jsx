@@ -35,7 +35,7 @@ render((
 				</Box>
 			}
 			right={(
-				<Box width={200} style={{
+				<Box width={215} style={{
 					backgroundColor: "var(--background-2)",
 					borderLeft: "1px solid var(--primary-2)"
 				}}>
@@ -62,7 +62,7 @@ render((
 				</section>
 				<section>
 					<h2>Heading 2</h2>
-					<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus voluptate, repellendus harum tempore sit aliquam deleniti mollitia, alias sapiente voluptatum ad? Assumenda mollitia laudantium a molestias nobis molestiae cupiditate quas.</p>
+					<p>Autem et sunt nemo deserunt sit dolores. Quis rerum cum voluptatem sit voluptatibus rerum. Et magnam magnam molestiae sed officia sunt vel. Rerum delectus exercitationem quo.</p>
 					<p>
 						<div className="Typography--placeholder">Pretend there's an image here</div>
 						<i className="Typography--caption">Image caption</i>
@@ -70,15 +70,15 @@ render((
 				</section>
 				<section>
 					<h3>Heading 3</h3>
-					<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus voluptate, repellendus harum tempore sit aliquam deleniti mollitia, alias sapiente voluptatum ad? Assumenda mollitia laudantium a molestias nobis molestiae cupiditate quas.</p>
+					<p>Voluptatem fuga eaque cum optio ut enim omnis. Rerum accusantium qui voluptas et ipsa quae non. Hic quia cum vitae molestias. Ut dolor est nobis mollitia enim sed debitis. Est ut placeat nihil laboriosam doloribus. Quod ea incidunt dicta qui soluta ipsam ab.</p>
 				</section>
 				<section>
 					<h4>Heading 4</h4>
-					<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus voluptate, repellendus harum tempore sit aliquam deleniti mollitia, alias sapiente voluptatum ad? Assumenda mollitia laudantium a molestias nobis molestiae cupiditate quas.</p>
+					<p>Alias dolorem aspernatur accusamus sunt alias maiores. Ut amet voluptatem voluptate sed ut occaecati et ipsa. Voluptas velit hic tempora alias ut officia nostrum. Eos et cum asperiores. Accusamus ab quasi hic rerum.</p>
 				</section>
 				<section>
 					<h5>Heading 5</h5>
-					<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus voluptate, repellendus harum tempore sit aliquam deleniti mollitia, alias sapiente voluptatum ad? Assumenda mollitia laudantium a molestias nobis molestiae cupiditate quas.</p>
+					<p>Suscipit quasi impedit accusamus officia. Aperiam laudantium magni sit rerum. Nesciunt voluptate consequatur aspernatur non provident id illo. Facere et sint nihil assumenda ex dolores. Accusantium accusantium libero eum consequuntur nulla et eaque.</p>
 				</section>
 			</div>
 		</Page>
