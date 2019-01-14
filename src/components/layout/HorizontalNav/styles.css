@@ -1,0 +1,11 @@
+.HorizontalNav {
+	display: flex;
+	align-items: flex-end;
+	padding: 0 .5em;
+}
+
+.HorizontalNav .Link {
+	margin: 0;
+	padding-right: .5em;
+	padding-bottom: .2em;
+}

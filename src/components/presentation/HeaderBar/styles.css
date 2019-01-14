@@ -3,8 +3,8 @@
 }
 
 .HeaderBar h1 {
-    font-size: 1.25em;
-    padding: .25em;
     margin: 0;
+    padding: .25rem;
+    font-size: 1.25em;
     color: var(--primary-1);
 }

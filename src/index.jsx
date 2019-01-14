@@ -2,6 +2,7 @@
 import {render} from "react-dom"
 import {Page as FillViewport, Box, ScrollView} from "react-layout-components"
 import HeaderBar from "./components/presentation/HeaderBar"
+import HorizontalNav from "./components/layout/HorizontalNav"
 import Link from "./components/presentation/Link"
 import HelloWorld from "./components/presentation/HelloWorld"
 import Page from "./components/layout/Page"
@@ -15,11 +16,11 @@ render((
 			top={
 				<HeaderBar>
 					<h1>Hello world</h1>
-					<nav>
+					<HorizontalNav>
 						<Link>Home</Link>
 						<Link isExternal>t0ast.cc</Link>
 						<Link isRedirect>Redirect</Link>
-					</nav>
+					</HorizontalNav>
 				</HeaderBar>
 			}
 			topIsSticky={false}
