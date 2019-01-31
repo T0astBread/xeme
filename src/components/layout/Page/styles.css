@@ -21,6 +21,11 @@
     flex-direction: row;
 }
 
+.Page__main section {
+    margin: 0 1em;
+    max-width: 50em;
+}
+
 .Page__main {
     flex: 1 1 auto;
 }

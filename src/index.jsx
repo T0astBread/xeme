@@ -1,13 +1,17 @@
 /* eslint-disable import/no-extraneous-dependencies */
 import {render} from "react-dom"
-import {Box} from "react-layout-components"
+import {Box, Container} from "react-layout-components"
+import FillViewport from "./components/layout/FillViewport"
 import HeaderBar from "./components/presentation/HeaderBar"
 import HorizontalNav from "./components/layout/HorizontalNav"
 import Link from "./components/presentation/Link"
 import HelloWorld from "./components/presentation/HelloWorld"
 import Page from "./components/layout/Page"
-import FillViewport from "./components/layout/FillViewport"
+import Image from "./components/presentation/Image"
+import InlineParagraph from "./components/layout/InlineParagraph"
 import "./styles.css"
+import sampleImage from "./images/hicc.gif"
+import sampleImage2 from "./images/small.jpg"
 
 const root = document.getElementById("root")
 
@@ -36,7 +40,7 @@ render((
 				</Box>
 			}
 			right={(
-				<Box fit width={200} style={{
+				<Box fit width={215} style={{
 					backgroundColor: "var(--background-2)",
 					borderLeft: "1px solid var(--primary-2)"
 				}}>
@@ -63,23 +67,58 @@ render((
 				</section>
 				<section>
 					<h2>Heading 2</h2>
-					<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus voluptate, repellendus harum tempore sit aliquam deleniti mollitia, alias sapiente voluptatum ad? Assumenda mollitia laudantium a molestias nobis molestiae cupiditate quas.</p>
-					<div>
-						<div className="Typography--placeholder">Pretend there's an image here</div>
-						<i className="Typography--caption">Image caption</i>
-					</div>
+					<p>Autem et sunt nemo deserunt sit dolores. Quis rerum cum voluptatem sit voluptatibus rerum. Et magnam magnam molestiae sed officia sunt vel. Rerum delectus exercitationem quo.</p>
+					<Image src={sampleImage} alt="Sample image (Yasuna from Kill Me Baby having a hiccup)" caption="GIF from Kill Me Baby (much recommended)" />
 				</section>
 				<section>
-					<h3>Heading 3</h3>
-					<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus voluptate, repellendus harum tempore sit aliquam deleniti mollitia, alias sapiente voluptatum ad? Assumenda mollitia laudantium a molestias nobis molestiae cupiditate quas.</p>
+					<InlineParagraph verticallyCenteredText
+						left={
+							<Image src={sampleImage2}
+								alt="Sample image (Agiri from Kill Me Baby)"
+								caption="Lorem ipsum dolor sit amet. Need a linewrap. Don't do drugs."
+								width={200} />
+						}>
+						<h3>Heading 3</h3>
+						<p>Voluptatem fuga eaque cum optio ut enim omnis. Rerum accusantium qui voluptas et ipsa quae non. Hic quia cum vitae molestias. Ut dolor est nobis mollitia enim sed debitis. Est ut placeat nihil laboriosam doloribus. Quod ea incidunt dicta qui soluta ipsam ab.</p>
+					</InlineParagraph>
+					<InlineParagraph
+						textAlignment="bottom"
+						textPadding=".5em"
+						right={
+							<Image src={sampleImage2}
+								alt="Sample image (Agiri from Kill Me Baby)"
+								caption="Lorem ipsum dolor sit amet. Need a linewrap. Don't do drugs."
+								width={200} />
+						}>
+						<h3>Heading 3</h3>
+						<p>Voluptatem fuga eaque cum optio ut enim omnis. Rerum accusantium qui voluptas et ipsa quae non. Hic quia cum vitae molestias. Ut dolor est nobis mollitia enim sed debitis. Est ut placeat nihil laboriosam doloribus. Quod ea incidunt dicta qui soluta ipsam ab.</p>
+					</InlineParagraph>
+					<InlineParagraph
+						textAlignment="top"
+						textPadding="1em"
+						left={
+							<Image src={sampleImage2}
+								alt="Sample image (Agiri from Kill Me Baby)"
+								caption="Lorem ipsum dolor sit amet. Need a linewrap. Don't do drugs."
+								width={200} />
+						}
+						right={
+							<Image src={sampleImage2}
+								alt="Sample image (Agiri from Kill Me Baby)"
+								caption="Lorem ipsum dolor sit amet. Need a linewrap. Don't do drugs."
+								width={200} />
+						}>
+						<h3>Heading 3</h3>
+						<p>Voluptatem fuga eaque cum optio ut enim omnis. Rerum accusantium qui voluptas et ipsa quae non. Hic quia cum vitae molestias. Ut dolor est nobis mollitia enim sed debitis. Est ut placeat nihil laboriosam doloribus. Quod ea incidunt dicta qui soluta ipsam ab.</p>
+					</InlineParagraph>
 				</section>
 				<section>
 					<h4>Heading 4</h4>
-					<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus voluptate, repellendus harum tempore sit aliquam deleniti mollitia, alias sapiente voluptatum ad? Assumenda mollitia laudantium a molestias nobis molestiae cupiditate quas.</p>
+					<p>Alias dolorem aspernatur accusamus sunt alias maiores. Ut amet voluptatem voluptate sed ut occaecati et ipsa. Voluptas velit hic tempora alias ut officia nostrum. Eos et cum asperiores. Accusamus ab quasi hic rerum.</p>
 				</section>
 				<section>
 					<h5>Heading 5</h5>
-					<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus voluptate, repellendus harum tempore sit aliquam deleniti mollitia, alias sapiente voluptatum ad? Assumenda mollitia laudantium a molestias nobis molestiae cupiditate quas.</p>
+					<p>Suscipit quasi impedit accusamus officia. Aperiam laudantium magni sit rerum. Nesciunt voluptate consequatur aspernatur non provident id illo. Facere et sint nihil assumenda ex dolores. Accusantium accusantium libero eum consequuntur nulla et eaque.</p>
 				</section>
 			</div>
 		</Page>
