@@ -7,6 +7,7 @@ import Link from "./components/presentation/Link"
 import HelloWorld from "./components/presentation/HelloWorld"
 import Page from "./components/layout/Page"
 import Image from "./components/presentation/Image"
+import FillViewport from "./components/layout/FillViewport"
 import "./styles.css"
 import sampleImage from "./images/hicc.gif"
 import sampleImage2 from "./images/small.jpg"
@@ -26,9 +27,9 @@ render((
 					</HorizontalNav>
 				</HeaderBar>
 			}
-			topIsSticky={false}
+			topIsSticky={true}
 			left={
-				<Box width={250} style={{
+				<Box fit width={250} style={{
 					backgroundColor: "var(--background-2)",
 					borderRight: "1px solid var(--primary-2)"
 				}}>
@@ -38,7 +39,7 @@ render((
 				</Box>
 			}
 			right={(
-				<Box width={215} style={{
+				<Box fit width={215} style={{
 					backgroundColor: "var(--background-2)",
 					borderLeft: "1px solid var(--primary-2)"
 				}}>
