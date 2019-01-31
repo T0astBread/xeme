@@ -1,0 +1,22 @@
+.InlineParagraph__text-container--align-center .InlineParagraph__text-spacer-top,
+.InlineParagraph__text-container--align-bottom .InlineParagraph__text-spacer-top {
+	flex-grow: 1;
+}
+
+.InlineParagraph__text-container--align-center .InlineParagraph__text-spacer-bottom,
+.InlineParagraph__text-container--align-top .InlineParagraph__text-spacer-bottom {
+	flex-grow: 1;
+}
+
+.InlineParagraph__text-container--align-center {
+	margin-top: auto;
+	margin-bottom: auto;
+}
+
+.InlineParagraph__text-container--align-center h1,
+.InlineParagraph__text-container--align-center h2,
+.InlineParagraph__text-container--align-center h3,
+.InlineParagraph__text-container--align-center h4,
+.InlineParagraph__text-container--align-center h5 {
+	margin-top: 0;
+}

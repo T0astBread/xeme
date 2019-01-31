@@ -1,13 +1,14 @@
 /* eslint-disable import/no-extraneous-dependencies */
-import { render } from "react-dom"
-import { Box } from "react-layout-components"
+import {render} from "react-dom"
+import {Box, Container} from "react-layout-components"
+import FillViewport from "./components/layout/FillViewport"
 import HeaderBar from "./components/presentation/HeaderBar"
 import HorizontalNav from "./components/layout/HorizontalNav"
 import Link from "./components/presentation/Link"
 import HelloWorld from "./components/presentation/HelloWorld"
 import Page from "./components/layout/Page"
 import Image from "./components/presentation/Image"
-import FillViewport from "./components/layout/FillViewport"
+import InlineParagraph from "./components/layout/InlineParagraph"
 import "./styles.css"
 import sampleImage from "./images/hicc.gif"
 import sampleImage2 from "./images/small.jpg"
@@ -70,13 +71,46 @@ render((
 					<Image src={sampleImage} alt="Sample image (Yasuna from Kill Me Baby having a hiccup)" caption="GIF from Kill Me Baby (much recommended)" />
 				</section>
 				<section>
-					<Box>
-						<Image src={sampleImage2} alt="Sample image (Agiri from Kill Me Baby)" caption="Lorem ipsum dolor sit amet. Need a linewrap. Don't do drugs." width={200} />
-						<div style={{flex: "1"}}>
-							<h3>Heading 3</h3>
-							<p>Voluptatem fuga eaque cum optio ut enim omnis. Rerum accusantium qui voluptas et ipsa quae non. Hic quia cum vitae molestias. Ut dolor est nobis mollitia enim sed debitis. Est ut placeat nihil laboriosam doloribus. Quod ea incidunt dicta qui soluta ipsam ab.</p>
-						</div>
-					</Box>
+					<InlineParagraph verticallyCenteredText
+						left={
+							<Image src={sampleImage2}
+								alt="Sample image (Agiri from Kill Me Baby)"
+								caption="Lorem ipsum dolor sit amet. Need a linewrap. Don't do drugs."
+								width={200} />
+						}>
+						<h3>Heading 3</h3>
+						<p>Voluptatem fuga eaque cum optio ut enim omnis. Rerum accusantium qui voluptas et ipsa quae non. Hic quia cum vitae molestias. Ut dolor est nobis mollitia enim sed debitis. Est ut placeat nihil laboriosam doloribus. Quod ea incidunt dicta qui soluta ipsam ab.</p>
+					</InlineParagraph>
+					<InlineParagraph
+						textAlignment="bottom"
+						textPadding=".5em"
+						right={
+							<Image src={sampleImage2}
+								alt="Sample image (Agiri from Kill Me Baby)"
+								caption="Lorem ipsum dolor sit amet. Need a linewrap. Don't do drugs."
+								width={200} />
+						}>
+						<h3>Heading 3</h3>
+						<p>Voluptatem fuga eaque cum optio ut enim omnis. Rerum accusantium qui voluptas et ipsa quae non. Hic quia cum vitae molestias. Ut dolor est nobis mollitia enim sed debitis. Est ut placeat nihil laboriosam doloribus. Quod ea incidunt dicta qui soluta ipsam ab.</p>
+					</InlineParagraph>
+					<InlineParagraph
+						textAlignment="top"
+						textPadding="1em"
+						left={
+							<Image src={sampleImage2}
+								alt="Sample image (Agiri from Kill Me Baby)"
+								caption="Lorem ipsum dolor sit amet. Need a linewrap. Don't do drugs."
+								width={200} />
+						}
+						right={
+							<Image src={sampleImage2}
+								alt="Sample image (Agiri from Kill Me Baby)"
+								caption="Lorem ipsum dolor sit amet. Need a linewrap. Don't do drugs."
+								width={200} />
+						}>
+						<h3>Heading 3</h3>
+						<p>Voluptatem fuga eaque cum optio ut enim omnis. Rerum accusantium qui voluptas et ipsa quae non. Hic quia cum vitae molestias. Ut dolor est nobis mollitia enim sed debitis. Est ut placeat nihil laboriosam doloribus. Quod ea incidunt dicta qui soluta ipsam ab.</p>
+					</InlineParagraph>
 				</section>
 				<section>
 					<h4>Heading 4</h4>
