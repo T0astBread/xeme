@@ -1,11 +1,12 @@
 /* eslint-disable import/no-extraneous-dependencies */
 import {render} from "react-dom"
-import {Page as FillViewport, Box, ScrollView} from "react-layout-components"
+import {Box} from "react-layout-components"
 import HeaderBar from "./components/presentation/HeaderBar"
 import HorizontalNav from "./components/layout/HorizontalNav"
 import Link from "./components/presentation/Link"
 import HelloWorld from "./components/presentation/HelloWorld"
 import Page from "./components/layout/Page"
+import FillViewport from "./components/layout/FillViewport"
 import "./styles.css"
 
 const root = document.getElementById("root")
@@ -23,9 +24,9 @@ render((
 					</HorizontalNav>
 				</HeaderBar>
 			}
-			topIsSticky={false}
+			topIsSticky={true}
 			left={
-				<Box width={250} style={{
+				<Box fit width={250} style={{
 					backgroundColor: "var(--background-2)",
 					borderRight: "1px solid var(--primary-2)"
 				}}>
@@ -35,24 +36,24 @@ render((
 				</Box>
 			}
 			right={(
-				<Box width={200} style={{
+				<Box fit width={200} style={{
 					backgroundColor: "var(--background-2)",
 					borderLeft: "1px solid var(--primary-2)"
 				}}>
-				<section>
-					<h1 className="Typography--placeholder">Right Panel</h1>
-				</section>
-			</Box>
+					<section>
+						<h1 className="Typography--placeholder">Right Panel</h1>
+					</section>
+				</Box>
 			)}
 			bottom={(
 				<Box fit height={100} style={{
 					backgroundColor: "var(--background-2)",
 					borderTop: "1px solid var(--primary-2)"
 				}}>
-				<section>
-					<h1 className="Typography--placeholder">Bottom Panel</h1>
-				</section>
-			</Box>
+					<section>
+						<h1 className="Typography--placeholder">Bottom Panel</h1>
+					</section>
+				</Box>
 			)}>
 			<div>
 				<section>
@@ -63,10 +64,10 @@ render((
 				<section>
 					<h2>Heading 2</h2>
 					<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus voluptate, repellendus harum tempore sit aliquam deleniti mollitia, alias sapiente voluptatum ad? Assumenda mollitia laudantium a molestias nobis molestiae cupiditate quas.</p>
-					<p>
+					<div>
 						<div className="Typography--placeholder">Pretend there's an image here</div>
 						<i className="Typography--caption">Image caption</i>
-					</p>
+					</div>
 				</section>
 				<section>
 					<h3>Heading 3</h3>

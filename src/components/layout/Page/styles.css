@@ -1,8 +1,9 @@
 .Page {
+    display: flex;
+    flex-direction: column;
     background-color: var(--background-1);
     color: var(--background-text);
     font-family: var(--font-family);
-    overflow: auto;
 }
 
 .Page__top, .Page__bottom {
@@ -14,10 +15,12 @@
     top: 0;
 }
 
-.Page__main {
-    flex: 1 1 auto;
+.Page__body {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
 }
 
-.Page__main section {
-    margin: 0 1em;
+.Page__main {
+    flex: 1 1 auto;
 }
