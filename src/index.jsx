@@ -1,6 +1,6 @@
 /* eslint-disable import/no-extraneous-dependencies */
 import { render } from "react-dom"
-import { Page as FillViewport, Box, ScrollView } from "react-layout-components"
+import { Box } from "react-layout-components"
 import HeaderBar from "./components/presentation/HeaderBar"
 import HorizontalNav from "./components/layout/HorizontalNav"
 import Link from "./components/presentation/Link"
