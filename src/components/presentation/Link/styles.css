@@ -1,0 +1,11 @@
+.Link {
+	margin: 0 .5em;
+}
+
+.Link--external {
+	color: var(--primary-1);
+}
+
+.Link--redirect {
+	color: var(--palette-green);
+}

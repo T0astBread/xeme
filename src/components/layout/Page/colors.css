@@ -1,0 +1,21 @@
+.Page {
+	--palette-red: #fd0d0e;
+	--palette-green: #0cfe0e;
+	--palette-yellow: #fdfe0e;
+	--palette-blue: #0c0dfe;
+	--palette-magenta: #fd0dfe;
+	--palette-cyan: #0cfefe;
+	--palette-white: #ffffff;
+}
+
+.Page--theme-dark {
+    --font-family: 'Consolas', monospace;
+    --background-1: #121316;
+    --background-2: #090a0b;
+    --background-text: white;
+    --grey-1: #555;
+    --grey-2: #333;
+    /* --primary-1: #59477f; */
+    --primary-1: #bb00ff;
+    --primary-2: #59477f;
+}

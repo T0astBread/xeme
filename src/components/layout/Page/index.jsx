@@ -1,18 +1,20 @@
 import React from "react"
 import {Box, ScrollView} from "react-layout-components"
-import styles from "./styles.css"
+import "./styles.css"
+import "./colors.css"
+import "./typography.css"
 
 const Page = ({ top, topIsSticky = false, left, right, bottom, children, theme = "dark" }) => {
     return (
-        <div className={`Page Page--theme-${theme}`} fit column>
+        <div className={`Page Page--theme-${theme}`}>
             <div className={`Page__top Page__top--${topIsSticky ? "" : "not-"}sticky`}>
                 {top}
             </div>
-            <div className="Page__body" flexGrow="1">
+            <div className="Page__body">
                 <div className="Page__left">
                     {left}
                 </div>
-                <div className="Page__main" flex="1 1 auto">
+                <div className="Page__main">
                     {children}
                 </div>
                 <div className="Page__right">
