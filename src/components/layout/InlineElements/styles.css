@@ -1,0 +1,16 @@
+.InlineElements {
+	display: flex;
+	flex-direction: row;
+}
+
+.InlineElements__child {
+	display: inline-block;
+}
+
+.InlineElements__child--ali {
+	display: inline-block;
+}
+
+.InlineElements__child:last-child {
+	padding-right: 0!important;
+}
