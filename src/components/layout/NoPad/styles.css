@@ -1,0 +1,31 @@
+.NoPad--no-padding.NoPad--side-top :first-child {
+	padding-top: 0!important;
+}
+
+.NoPad--no-padding.NoPad--side-bottom :first-child {
+	padding-bottom: 0!important;
+}
+
+.NoPad--no-padding.NoPad--side-left :first-child {
+	padding-left: 0!important;
+}
+
+.NoPad--no-padding.NoPad--side-right :first-child {
+	padding-right: 0!important;
+}
+
+.NoPad--no-margin.NoPad--side-top :first-child {
+	margin-top: 0!important;
+}
+
+.NoPad--no-margin.NoPad--side-bottom :first-child {
+	margin-bottom: 0!important;
+}
+
+.NoPad--no-margin.NoPad--side-left :first-child {
+	margin-left: 0!important;
+}
+
+.NoPad--no-margin.NoPad--side-right :first-child {
+	margin-right: 0!important;
+}
