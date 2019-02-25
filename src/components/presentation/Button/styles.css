@@ -1,13 +1,36 @@
 .Button {
+	position: relative;
+	padding: .5em .75em;
 	color: var(--background-text);
 	background: none;
 	border: 1px solid white;
 	font-family: inherit;
 	font-size: 1.1em;
-	padding: .5em .75em;
+}
+
+.Button:hover:not(:active) {
+	outline: 2px solid white;
+}
+
+.Button:focus:not(:active) {
+	outline: 3px solid;
+}
+
+.Button:active {
+	background: white;
+	color: black;
 }
 
 .Button--type-primary {
 	color: var(--primary-1);
 	border-color: var(--primary-1);
+}
+
+.Button--type-primary:hover:not(:active) {
+	outline-color: var(--primary-1);
+}
+
+.Button--type-primary:active {
+	background: var(--primary-1);
+	color: var(--primary-text);
 }
