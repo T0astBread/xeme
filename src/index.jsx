@@ -6,6 +6,7 @@ import HeaderBar from "./components/presentation/HeaderBar"
 import HorizontalNav from "./components/layout/HorizontalNav"
 import Link from "./components/presentation/Link"
 import InlineElements from "./components/layout/InlineElements"
+import NoPad from "./components/layout/NoPad"
 import Align from "./components/layout/Align"
 import WhiteBox from "./components/presentation/WhiteBox"
 import Page from "./components/layout/Page"
@@ -95,7 +96,9 @@ render((
 							caption="Lorem ipsum dolor sit amet. Need a linewrap. Don't do drugs."
 							width={200} />
 						<div>
-							<h3>Heading 3</h3>
+							<NoPad sides={["top"]}>
+								<h3>Heading 3</h3>
+							</NoPad>
 							<p>Voluptatem fuga eaque cum optio ut enim omnis. Rerum accusantium qui voluptas et ipsa quae non. Hic quia cum vitae molestias. Ut dolor est nobis mollitia enim sed debitis. Est ut placeat nihil laboriosam doloribus. Quod ea incidunt dicta qui soluta ipsam ab.</p>
 						</div>
 					</InlineElements>
