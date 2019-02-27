@@ -1,0 +1,15 @@
+.Align {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.Align__spacer-top--alignment-center,
+.Align__spacer-top--alignment-bottom {
+	flex: 1;
+}
+
+.Align__spacer-bottom--alignment-center,
+.Align__spacer-bottom--alignment-top {
+	flex: 1;
+}
